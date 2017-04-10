@@ -1,0 +1,47 @@
+<html>
+    <title> Simple Calc </title>
+    <style type="text/css">
+        .button{
+            width: 40px;
+            height: 30px;
+            
+        }
+        </style>
+    <body>  
+        
+        <form name="calcform">
+            <input type="text" name="display" placeholder="0"> <br>
+            <input type="button" class="button" value= "(" onclick="calcform.display.value += '('">
+            <input type="button" class="button" value= ")" onclick="calcform.display.value += ')'">
+            
+            <br>
+            <input type="button" class="button" value= "&plusmn;" onclick="calcform.display.value = (calcform.display.value)*-1">
+            <input type="button" class="button" value= "%" onclick="calcform.display.value += (calcform.display.value*0,01)">
+            <input type="button" class="button" value= "9" onclick="calcform.display.value += '9'">
+            <input type="button" class="button" value= "8" onclick="calcform.display.value += '8'">
+            <input type="button" class="button" value= "7" onclick="calcform.display.value +='7'">
+            <input type="button" class="button" value= "+" onclick="calcform.display.value += '+'">
+            <br>
+            <input type="button" class="button" value= "x" onclick="calcform.display.value *= calcform.display.value ">
+            <input type="button" class="button" value= "&#8731;" onclick="calcform.display.value = (calcform.display.value)/3">
+            <input type="button" class="button" value= "6" onclick="calcform.display.value += '6'">
+            <input type="button" class="button" value= "5" onclick="calcform.display.value += '5'">
+            <input type="button" class="button" value= "4" onclick="calcform.display.value += '4'">
+            <input type="button" class="button" value= "-" onclick="calcform.display.value += '-'">
+            <br>
+            <input type="button" class="button" value= "x" onclick="calcform.display.value *= (calcform.display.value*calcform.display.value)">
+            <input type="button" class="button" value= "&radic;" onclick="calcform.display.value = Math.sqrt(calcform.display.value)">
+            <input type="button" class="button" value= "3" onclick="calcform.display.value += '3'">
+            <input type="button" class="button" value= "2" onclick="calcform.display.value += '2'">
+            <input type="button" class="button" value= "1" onclick="calcform.display.value += '1'">
+            <input type="button" class="button" value= "*" onclick="calcform.display.value += '*'">
+            
+            <br>
+            <input type="button" class="button" value= "=" style="width: 84px" onclick="calcform.display.value = eval(calcform.display.value)">
+            <input type="button" class="button" value= "0" onclick="calcform.display.value += '0'">
+            <input type="button" class="button" value= "C" onclick="calcform.display.value = ' '">
+            <input type="button" class="button" value= "/" onclick="calcform.display.value += '/'">
+            <input type="button" class="button" value= "." onclick="calcform.display.value += '.'">
+    
+    </body>    
+</html>
