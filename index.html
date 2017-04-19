@@ -1,21 +1,54 @@
 <html>
     <title> Simple Calc </title>
     <style type="text/css">
-        .button{
+        .button {
             width: 40px;
             height: 30px;
+            border-radius: 4px;
+            padding: 2px 2px 2px 2px;
             
         }
-        </style>
+        .sumButton {
+            width: 84px;
+            height: 30px;
+            border-radius: 4px;
+            padding: 2px 2px 2px 2px;
+        }
         
-        
-        <body>
-        
+        .display {
+            width:260px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            padding: 10px;
+        }
+        #calc {
+            border: solid;
+            border-color: yellow;
+            width: 300px;
+            background: #7a7a52;
+            position: fixed;
+            border-radius: 4px;
+        }
+        #calcform {
+            margin-left: 20px;
+            margin-top: 20px;
             
-        <form name="calcform">
-            <input type="text" name="display" placeholder="0"> <br>
+        }
+        h2 {
+            font-size: 16px;
+            font-style: italic;
+            text-align: center;
+            display: block;
+        }
+        </style>
+        <body>
+        <div id="Calc">
+            <h2> A simple calculator  </h2>    
+        <form id="calcform">
+            <input type="text" class="display" name="display" placeholder="0"> <br>
             <input type="button" class="button" value= "(" onclick="calcform.display.value += '('">
             <input type="button" class="button" value= ")" onclick="calcform.display.value += ')'">
+            <input type="button" class="button" value= "&larr;" onclick="calcform.display.value += ' '">
             
             <br>
             <input type="button" class="button" value= "&plusmn;" onclick="calcform.display.value = (calcform.display.value)*-1">
@@ -40,11 +73,11 @@
             <input type="button" class="button" value= "*" onclick="calcform.display.value += '*'">
             
             <br>
-            <input type="button" class="button" value= "=" style="width: 84px" onclick="calcform.display.value = eval(calcform.display.value)">
+            <input type="button" class="sumButton" value= "="  onclick="calcform.display.value = eval(calcform.display.value)">
             <input type="button" class="button" value= "0" onclick="calcform.display.value += '0'">
             <input type="button" class="button" value= "C" onclick="calcform.display.value = ' '">
             <input type="button" class="button" value= "/" onclick="calcform.display.value += '/'">
             <input type="button" class="button" value= "." onclick="calcform.display.value += '.'">
-    
+        </div>    
     </body>    
 </html>
