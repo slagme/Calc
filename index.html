@@ -6,7 +6,6 @@
             height: 30px;
             border-radius: 4px;
             padding: 2px 2px 2px 2px;
-            
         }
         .sumButton {
             width: 84px;
@@ -32,7 +31,6 @@
         #calcform {
             margin-left: 20px;
             margin-top: 20px;
-            
         }
         h2 {
             font-size: 16px;
@@ -43,7 +41,7 @@
         </style>
         <body>
         <div id="Calc">
-            <h2> A simple calculator  </h2>    
+            <h2> A simple calculator </h2>    
         <form id="calcform">
             <input type="text" class="display" name="display" placeholder="0"> <br>
             <input type="button" class="button" value= "(" onclick="calcform.display.value += '('">
@@ -51,8 +49,8 @@
             <input type="button" class="button" value= "&larr;" onclick="calcform.display.value += ' '">
             
             <br>
-            <input type="button" class="button" value= "&plusmn;" onclick="calcform.display.value = (calcform.display.value)*-1">
-            <input type="button" class="button" value= "%" onclick="calcform.display.value += (calcform.display.value*0,01)">
+            <input type="button" class="button" value= "&plusmn;" onclick="calcform.display.value = (calcform.display.value) * -1">
+            <input type="button" class="button" value= "%" onclick="calcform.display.value = (calcform.display.value/ 100) ">
             <input type="button" class="button" value= "9" onclick="calcform.display.value += '9'">
             <input type="button" class="button" value= "8" onclick="calcform.display.value += '8'">
             <input type="button" class="button" value= "7" onclick="calcform.display.value +='7'">
@@ -65,7 +63,7 @@
             <input type="button" class="button" value= "4" onclick="calcform.display.value += '4'">
             <input type="button" class="button" value= "-" onclick="calcform.display.value += '-'">
             <br>
-            <input type="button" class="button" value= "x&#253;" onclick="calcform.display.value *= (calcform.display.value*calcform.display.value)">
+            <input type="button" class="button" value= "x" onclick="calcform.display.value *= (calcform.display.value*calcform.display.value)">
             <input type="button" class="button" value= "&radic;" onclick="calcform.display.value = Math.sqrt(calcform.display.value)">
             <input type="button" class="button" value= "3" onclick="calcform.display.value += '3'">
             <input type="button" class="button" value= "2" onclick="calcform.display.value += '2'">
@@ -75,7 +73,7 @@
             <br>
             <input type="button" class="sumButton" value= "="  onclick="calcform.display.value = eval(calcform.display.value)">
             <input type="button" class="button" value= "0" onclick="calcform.display.value += '0'">
-            <input type="button" class="button" value= "C" onclick="calcform.display.value = ' '">
+            <input type="button" class="button" value= "C" onclick="calcform.display.value = null">
             <input type="button" class="button" value= "/" onclick="calcform.display.value += '/'">
             <input type="button" class="button" value= "." onclick="calcform.display.value += '.'">
         </div>    
